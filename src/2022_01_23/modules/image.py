@@ -1,3 +1,7 @@
+import cv2
+import numpy as np
+
+
 def bg(bg_dir_path, z_range, mode=0):
     """
     create background image
