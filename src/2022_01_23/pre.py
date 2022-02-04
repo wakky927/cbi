@@ -30,8 +30,7 @@ def sub_bg(args):
     for i in range(start, end):
         f = in_dir + f"_{i:08}.bmp"
         img = cv2.imread(f, 0)
-        s_img = img - b_img
-        s_img[s_img < 0] = 0
+        s_img = cv2.subtract(img, b_img)
         cv2.imwrite(out_dir + f"_{i:08}.bmp", s_img)
 
 
