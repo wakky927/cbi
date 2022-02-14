@@ -6,6 +6,10 @@ python3 pre.py "b" "/media/takuya/HDD/M1/original/2022_02_08/_49/" "/media/takuy
 
 wait
 
+echo "bg program fin."
+
+wait
+
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_3/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_3/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_4/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_4/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_5/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_5/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
@@ -75,6 +79,10 @@ python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_60/" "/media/takuy
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_61/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_61/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_62/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_62/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/takuya/HDD/M1/original/2022_02_07/_63/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/sub/_63/" 0 3234 "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/bg.bmp" &
+
+wait
+
+echo "subtract program fin."
 
 wait
 
