@@ -2,7 +2,7 @@
 
 cd ../src/2022_02_07/
 
-python3 pre.py "b" "/media/takuya/HDD/M1/original/2022_02_08/bg/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/" 0 1167 "min"
+python3 pre.py "b" "/media/takuya/HDD/M1/original/2022_02_08/_49/" "/media/takuya/exHDD/M1/result/2022_02_07/pre/bg/" 0 1167 "min"
 
 wait
 
