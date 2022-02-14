@@ -2,7 +2,7 @@
 
 cd ../src/2022_02_07/
 
-python3 pre.py "b" "/media/lfc/ボリューム/M1/original/2022_02_08/_49/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/" 0 1167 "min"
+python3 pre.py "b" "/media/lfc/ボリューム/M1/original/2022_02_08/_49/" "/media/lfc/ボリューム/M1/result/2022_02_08/pre/bg/" 0 1167 "min"
 
 wait
 
@@ -10,6 +10,8 @@ echo "bg program fin."
 
 wait
 
+python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_1/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_1/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
+python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_2/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_2/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_3/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_3/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_4/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_4/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_5/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_5/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
@@ -26,9 +28,8 @@ python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_15/" "/me
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_16/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_16/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_17/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_17/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_18/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_18/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-
+python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_19/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_19/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_20/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_20/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_21/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_21/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_22/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_22/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_23/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_23/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_24/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_24/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
@@ -43,9 +44,6 @@ python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_32/" "/me
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_33/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_33/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_34/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_34/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_35/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_35/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-
-wait
-
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_36/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_36/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_37/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_37/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_38/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_38/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
@@ -57,24 +55,6 @@ python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_43/" "/me
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_44/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_44/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_45/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_45/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_46/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_46/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_47/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_47/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_48/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_48/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_49/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_49/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_50/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_50/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_51/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_51/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_52/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_52/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_53/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_53/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_54/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_54/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_55/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_55/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_56/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_56/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_57/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_57/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_58/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_58/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_59/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_59/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_60/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_60/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_61/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_61/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_62/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_62/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
-python3 pre.py "s" "/media/lfc/ボリューム/M1/original/2022_02_07/_63/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_63/" 0 3234 "/media/lfc/ボリューム/M1/result/2022_02_07/pre/bg/bg.bmp" &
 
 wait
 
@@ -82,6 +62,8 @@ echo "subtract program fin."
 
 wait
 
+python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_1/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_1/" 0 3234 &
+python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_2/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_2/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_3/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_3/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_4/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_4/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_5/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_5/" 0 3234 &
@@ -98,9 +80,8 @@ python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_15/
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_16/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_16/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_17/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_17/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_18/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_18/" 0 3234 &
-
+python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_19/" "/mediaボリューム/M1/result/2022_02_07/pre/calib/_19/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_20/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_20/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_21/" "/mediaボリューム/M1/result/2022_02_07/pre/calib/_21/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_22/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_22/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_23/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_23/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_24/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_24/" 0 3234 &
@@ -115,9 +96,6 @@ python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_32/
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_33/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_33/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_34/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_34/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_35/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_35/" 0 3234 &
-
-wait
-
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_36/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_36/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_37/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_37/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_38/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_38/" 0 3234 &
@@ -129,24 +107,6 @@ python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_43/
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_44/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_44/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_45/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_45/" 0 3234 &
 python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_46/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_46/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_47/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_47/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_48/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_48/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_49/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_49/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_50/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_50/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_51/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_51/" 0 3234 &
-
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_52/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_52/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_53/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_53/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_54/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_54/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_55/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_55/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_56/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_56/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_57/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_57/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_58/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_58/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_59/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_59/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_60/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_60/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_61/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_61/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_62/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_62/" 0 3234 &
-python3 pre.py "c" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/sub/_63/" "/media/lfc/ボリューム/M1/result/2022_02_07/pre/calib/_63/" 0 3234 &
 
 wait
 
