@@ -1,3 +1,4 @@
+import copy
 import sys
 
 import cv2
@@ -40,21 +41,22 @@ def calib(args):
     start = int(args[4])
     end = int(args[5])
 
-    src_pts = np.array([[125, 174], [125, 812], [795, 833], [806, 170]], dtype=np.float32)
-    dst_pts = np.array([[250, 173], [250, 789], [797, 809], [806, 170]], dtype=np.float32)
+    src_pts = np.array([[125, 158], [125, 826], [966, 826], [966, 158]], dtype=np.float32)
+    dst_pts = np.array([[231, 158], [231, 826], [966, 826], [966, 158]], dtype=np.float32)
     mat = cv2.getPerspectiveTransform(src_pts, dst_pts)
 
-    src_pts2 = np.array([[0, 0], [0, 633], [602, 633], [602, 0]], dtype=np.float32)
-    dst_pts2 = np.array([[30, 0], [30, 633], [602, 633], [602, 0]], dtype=np.float32)
+    src_pts2 = np.array([[0, 0], [0, 692], [300, 692], [300, 0]], dtype=np.float32)
+    dst_pts2 = np.array([[30, 0], [30, 692], [300, 692], [300, 0]], dtype=np.float32)
     mat2 = cv2.getPerspectiveTransform(src_pts2, dst_pts2)
 
     for i in range(start, end):
         f = in_dir + f"_{i:08}.bmp"
         img = cv2.imread(f, 0)
         p_img = cv2.warpPerspective(img, mat, (1280, 1024))
-        t_img = image.trim(p_img, [175, 250], [808, 852])
-        p_img2 = cv2.warpPerspective(t_img, mat2, (602, 633))
-        t_img2 = image.trim(p_img2, [0, 30], [633, 602])
+        t_img = image.trim(p_img, [158, 231], [850, 1000])
+        p_img2 = copy.deepcopy(p_img)
+        p_img2[:692, :300] = cv2.warpPerspective(t_img, mat2, (300, 692))
+        t_img2 = image.trim(p_img2, [0, 40], [692, 769])
         cv2.imwrite(out_dir + f"_{i:08}.bmp", t_img2)
 
 
