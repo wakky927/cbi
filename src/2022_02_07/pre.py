@@ -54,9 +54,9 @@ def calib(args):
         img = cv2.imread(f, 0)
         p_img = cv2.warpPerspective(img, mat, (1280, 1024))
         t_img = image.trim(p_img, [158, 231], [850, 1000])
-        p_img2 = copy.deepcopy(p_img)
+        p_img2 = copy.deepcopy(t_img)
         p_img2[:692, :300] = cv2.warpPerspective(t_img, mat2, (300, 692))
-        t_img2 = image.trim(p_img2, [0, 40], [692, 769])
+        t_img2 = image.trim(p_img2, [0, 30], [692, 769])
         cv2.imwrite(out_dir + f"_{i:08}.bmp", t_img2)
 
 
