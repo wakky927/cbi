@@ -40,7 +40,7 @@ def graph(dx, dy, out_path):
         tt.set_fontsize(100)
     pp.set_label('$\sqrt{u^2+v^2}$ [mm/s]', fontsize=100)
     im.set_clim(0, 120)
-    plt.savefig(out_path, dpi=300)
+    plt.savefig(out_path, dpi=80)
 
     plt.cla()
     plt.clf()
