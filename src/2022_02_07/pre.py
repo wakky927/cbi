@@ -3,6 +3,7 @@ import sys
 
 import cv2
 import numpy as np
+import tqdm
 
 from modules import image
 
@@ -28,7 +29,7 @@ def sub_bg(args):
 
     b_img = cv2.imread(bg_img_path, 0)
 
-    for i in range(start, end):
+    for i in tqdm.tqdm(range(start, end)):
         f = in_dir + f"_{i:08}.bmp"
         img = cv2.imread(f, 0)
         s_img = cv2.subtract(img, b_img)
@@ -49,7 +50,7 @@ def calib(args):
     dst_pts2 = np.array([[30, 0], [30, 692], [300, 692], [300, 0]], dtype=np.float32)
     mat2 = cv2.getPerspectiveTransform(src_pts2, dst_pts2)
 
-    for i in range(start, end):
+    for i in tqdm.tqdm(range(start, end)):
         f = in_dir + f"_{i:08}.bmp"
         img = cv2.imread(f, 0)
         p_img = cv2.warpPerspective(img, mat, (1280, 1024))
