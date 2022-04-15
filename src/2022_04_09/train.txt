@@ -1,0 +1,4 @@
+images/0.bmp
+images/1.bmp
+images/2.bmp
+images/3.bmp
