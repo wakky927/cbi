@@ -1,9 +1,13 @@
+import os
+import sys
+
 import cv2
 import numpy as np
 from tqdm import tqdm
 
 
-SUPER = ""
+# user = os.environ["USER"]
+# SUPER_DIR = f"/media/{user}/ボリューム/M2"
 Q_DIR = [
     "cbi_q_1",
     "cbi_q_15",
@@ -11,18 +15,18 @@ Q_DIR = [
     "cbi_q_25",
     "cbi_q_3"
 ]
-SUB_DIR = [
-    "C001H001S0001",
-    "C001H001S0002",
-    "C001H001S0003",
-    "C001H001S0004",
-    "C001H001S0005",
-    "C001H001S0006",
-    "C001H001S0007",
-    "C001H001S0008",
-    "C001H001S0009",
-    "C001H001S00010",
-]
+# SUB_DIR = [
+#     "C001H001S0001",
+#     "C001H001S0002",
+#     "C001H001S0003",
+#     "C001H001S0004",
+#     "C001H001S0005",
+#     "C001H001S0006",
+#     "C001H001S0007",
+#     "C001H001S0008",
+#     "C001H001S0009",
+#     "C001H001S00010",
+# ]
 
 TRACER_IMGS_LIGHT_DIR = "tracer_imgs_light"
 
@@ -44,7 +48,7 @@ def is_same(ij, r):
 def mark_tracer_light(im):
     res_list = []
 
-    for t in tqdm(range(600)):
+    for t in range(600):
         tracer_im = cv2.imread(TRACER_IMGS_LIGHT_DIR + f"/tracer_{t}.bmp")
         res = cv2.matchTemplate(im, tracer_im, cv2.TM_CCORR_NORMED)
         res_j, res_i = np.where(res > THRESHOLD)
@@ -59,13 +63,21 @@ def mark_tracer_light(im):
 
 
 if __name__ == '__main__':
-    for Q_DIR in Q_DIR:
-        for SUB_DIR in SUB_DIR:
-            for f in range(1, 5001):
-                FILE = SUPER + "/original/2022_04_09/" + Q_DIR + "/" + SUB_DIR + "/" + SUB_DIR + f"{f:06}.bmp"
-                img = cv2.imread(FILE)
-                img = crop_img_light(im=img)
-                result = mark_tracer_light(im=img)
-                np.savetxt("test.csv", r_list, delimiter=',', fmt="%d", header="(i, j) of upper left coordinates.")
+    args = sys.argv
+
+    SUPER = args[1]
+    sub_dir = args[2]
+
+    for q_dir in Q_DIR:
+        for f in tqdm(range(1, 5001)):
+            FILE = SUPER + "/original/2022_04_09/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
+            img = cv2.imread(FILE)
+            img = crop_img_light(im=img)
+            result = mark_tracer_light(im=img)
+            np.savetxt(
+                SUPER + "/result/2022_04_09/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                r_list,
+                delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
+            )
 
     print(0)
