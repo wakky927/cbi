@@ -11,7 +11,7 @@ python3 pre_light.py "G:\\M2" "C001H001S0006" &
 python3 pre_light.py "G:\\M2" "C001H001S0007" &
 python3 pre_light.py "G:\\M2" "C001H001S0008" &
 python3 pre_light.py "G:\\M2" "C001H001S0009" &
-python3 pre_light.py "G:\\M2" "C001H001S00010" &
+python3 pre_light.py "G:\\M2" "C001H001S0010" &
 
 wait
 
