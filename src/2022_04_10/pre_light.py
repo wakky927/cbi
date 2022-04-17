@@ -7,11 +7,11 @@ from tqdm import tqdm
 
 
 user = os.environ["USER"]
-SUPER_DIR = f"/media/{user}/ボリューム/M2"
+SUPER_DIR = f"/media/{user}/ボリューム1/M2"
 Q_DIR = [
-    "cbi_q_1",
-    "cbi_q_2",
-    "cbi_q_3"
+    "rbi_q_1",
+    "rbi_q_2",
+    "rbi_q_3"
 ]
 # SUB_DIR = [
 #     "C001H001S0001",
@@ -28,7 +28,7 @@ Q_DIR = [
 
 TRACER_IMGS_LIGHT_DIR = "tracer_imgs_light"
 
-THRESHOLD = 0.96
+THRESHOLD = 0.95
 
 
 def crop_img_light(im):
@@ -46,7 +46,7 @@ def is_same(ij, r):
 def mark_tracer_light(im):
     res_list = []
 
-    for t in range(600):
+    for t in range(0, 600, 12):
         tracer_im = cv2.imread(TRACER_IMGS_LIGHT_DIR + f"/tracer_{t}.bmp")
         res = cv2.matchTemplate(im, tracer_im, cv2.TM_CCORR_NORMED)
         res_j, res_i = np.where(res > THRESHOLD)
