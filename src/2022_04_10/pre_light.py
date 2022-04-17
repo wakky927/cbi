@@ -11,9 +11,7 @@ SUPER_DIR = f"/media/{user}/ボリューム/M2"
 Q_DIR = [
     "cbi_q_1",
     "cbi_q_2",
-    "cbi_q_3",
-    "cbi_q_15",
-    "cbi_q_25"
+    "cbi_q_3"
 ]
 # SUB_DIR = [
 #     "C001H001S0001",
@@ -65,17 +63,16 @@ def mark_tracer_light(im):
 if __name__ == '__main__':
     args = sys.argv
 
-    SUPER = args[1]
-    sub_dir = args[2]
+    sub_dir = args[1]
 
     for q_dir in Q_DIR:
-        for f in tqdm(range(1, 5001)):
-            FILE = SUPER_DIR + "/original/2022_04_09/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
+        for f in tqdm(range(1, 10001)):
+            FILE = SUPER_DIR + "/original/2022_04_10/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
             img = cv2.imread(FILE)
             img = crop_img_light(im=img)
             result = mark_tracer_light(im=img)
             np.savetxt(
-                SUPER_DIR + "/result/2022_04_09/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER_DIR + "/result/2022_04_10/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
                 result,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )
