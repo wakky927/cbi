@@ -2,12 +2,12 @@
 
 cd ../src/2022_04_10/
 
-python3 pre_light.py "C001H001S0001" &
-python3 pre_light.py "C001H001S0002" &
-python3 pre_light.py "C001H001S0003" &
-python3 pre_light.py "C001H001S0004" &
-python3 pre_light.py "C001H001S0005" &
-python3 pre_light.py "C001H001S0006" &
+#python3 pre_light.py "C001H001S0001" &
+#python3 pre_light.py "C001H001S0002" &
+#python3 pre_light.py "C001H001S0003" &
+#python3 pre_light.py "C001H001S0004" &
+#python3 pre_light.py "C001H001S0005" &
+#python3 pre_light.py "C001H001S0006" &
 
 wait
 

@@ -7,12 +7,13 @@ from tqdm import tqdm
 
 
 user = os.environ["USER"]
-SUPER_DIR = f"/media/{user}/ボリューム1/M2"
-Q_DIR = [
-    "rbi_q_1",
-    "rbi_q_2",
-    "rbi_q_3"
-]
+SUPER_DIR = f"/media/{user}/ボリューム/M2"
+SUPER_DIR2 = f"/media/{user}/ボリューム1/M2"
+# Q_DIR = [
+#     "rbi_q_1",
+#     "rbi_q_2",
+#     "rbi_q_3"
+# ]
 # SUB_DIR = [
 #     "C001H001S0001",
 #     "C001H001S0002",
@@ -28,7 +29,7 @@ Q_DIR = [
 
 TRACER_IMGS_LIGHT_DIR = "tracer_imgs_light"
 
-THRESHOLD = 0.95
+THRESHOLD = 0.96
 
 
 def crop_img_light(im):
@@ -46,7 +47,7 @@ def is_same(ij, r):
 def mark_tracer_light(im):
     res_list = []
 
-    for t in range(0, 600, 12):
+    for t in range(0, 100):
         tracer_im = cv2.imread(TRACER_IMGS_LIGHT_DIR + f"/tracer_{t}.bmp")
         res = cv2.matchTemplate(im, tracer_im, cv2.TM_CCORR_NORMED)
         res_j, res_i = np.where(res > THRESHOLD)
@@ -64,15 +65,16 @@ if __name__ == '__main__':
     args = sys.argv
 
     sub_dir = args[1]
+    Q_DIR = ["rbi_q_3"]
 
     for q_dir in Q_DIR:
-        for f in tqdm(range(1, 10001)):
+        for f in tqdm(range(8900, 10001)):
             FILE = SUPER_DIR + "/original/2022_04_10/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
             img = cv2.imread(FILE)
             img = crop_img_light(im=img)
             result = mark_tracer_light(im=img)
             np.savetxt(
-                SUPER_DIR + "/result/2022_04_10/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER_DIR2 + "/result/2022_04_10/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
                 result,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )
