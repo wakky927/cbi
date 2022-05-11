@@ -80,6 +80,9 @@ def nearest(imgs):
             result[ii][2] = pp1[pp01[ii].p1][0] - pp0[pp01[ii].p0][0]
             result[ii][3] = pp1[pp01[ii].p1][1] - pp0[pp01[ii].p0][1]
 
+    if npa == 0:
+        return result.flatten()
+
     return result[:npa]
 
 
@@ -112,7 +115,7 @@ if __name__ == '__main__':
 
                     r = nearest(imgs=DATA[j])
 
-                    if r is not None or r != []:
+                    if r is not None:
                         np.savetxt(OUT_DIR + f"{i + j:06}.csv", r, fmt='%.18f', delimiter=',', header="x, y, dx, dy")
 
         print(f"cbi_q_{q} fin. ")
