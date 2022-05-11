@@ -6,8 +6,8 @@ import numpy as np
 from tqdm import tqdm
 
 
-user = os.environ["USER"]
-SUPER_DIR = f"/media/{user}/ボリューム/M2"
+# user = os.environ["USER"]
+# SUPER_DIR = f"/media/{user}/ボリューム/M2"
 Q_DIR = [
     "cbi_q_1",
     "cbi_q_2",
@@ -70,12 +70,19 @@ if __name__ == '__main__':
 
     for q_dir in Q_DIR:
         for f in tqdm(range(1, 5001)):
-            FILE = SUPER_DIR + "/original/2022_04_09/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
+            # FILE = SUPER_DIR + "/original/2022_04_09/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
+            FILE = SUPER + "\\original\\2022_04_09\\" + q_dir + "\\" + sub_dir + "\\" + sub_dir + f"{f:06}.bmp"
+
             img = cv2.imread(FILE)
             img = crop_img_light(im=img)
             result = mark_tracer_light(im=img)
+            # np.savetxt(
+            #     SUPER_DIR + "/result/2022_04_09/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+            #     result,
+            #     delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
+            # )
             np.savetxt(
-                SUPER_DIR + "/result/2022_04_09/pre/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER + "\\result\\2022_04_09\\pre\\" + q_dir + "\\" + sub_dir + f"\\{f:06}.csv",
                 result,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )

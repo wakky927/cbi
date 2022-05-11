@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
                     r = nearest(imgs=DATA[j])
 
-                    if r is not None:
+                    if r is not None and r != []:
                         np.savetxt(OUT_DIR + f"{i + j:06}.csv", r, fmt='%.18f', delimiter=',', header="x, y, dx, dy")
 
         print(f"rbi_q_{q} fin. ")
