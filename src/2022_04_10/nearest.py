@@ -4,7 +4,8 @@ import numpy as np
 from tqdm import tqdm
 
 
-SUPER = "/media/takuya/ボリューム/M2/result/2022_04_10/"
+# SUPER = "/media/takuya/ボリューム/M2/result/2022_04_10/"
+SUPER = "G:\\M2\\result\\2022_04_10\\"
 
 
 class Vector2D(object):
