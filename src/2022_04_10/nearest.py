@@ -82,7 +82,7 @@ def nearest(imgs):
             result[ii][3] = pp1[pp01[ii].p1][1] - pp0[pp01[ii].p0][1]
 
     if npa == 0:
-        return result.flatten()
+        return result
 
     return result[:npa]
 

@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     for q_dir in Q_DIR:
         for f in tqdm(range(6001, 10001)):
-            FILE = SUPER + "/original/2022_04_10/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
+            FILE = SUPER_DIR + "/original/2022_04_10/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
 
             img = cv2.imread(FILE)
 
@@ -80,17 +80,17 @@ if __name__ == '__main__':
             result_right = mark_tracer_dark(im=img_right)
 
             np.savetxt(
-                SUPER + "/result/2022_04_10/pre_dark/top/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER_DIR2 + "/result/2022_04_10/pre_dark/top/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
                 result_top,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )
             np.savetxt(
-                SUPER + "/result/2022_04_10/pre_dark/left/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER_DIR2 + "/result/2022_04_10/pre_dark/left/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
                 result_left,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )
             np.savetxt(
-                SUPER + "/result/2022_04_10/pre_dark/right/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
+                SUPER_DIR2 + "/result/2022_04_10/pre_dark/right/" + q_dir + "/" + sub_dir + f"/{f:06}.csv",
                 result_right,
                 delimiter=',', fmt="%d", header="(i, j) of upper left coordinates."
             )
