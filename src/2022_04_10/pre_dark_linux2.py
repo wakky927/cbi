@@ -8,8 +8,8 @@ from tqdm import tqdm
 import adj
 
 user = os.environ["USER"]
-SUPER_DIR = f"/mnt/lfc2/v16t/wada/M2"
-SUPER_DIR2 = f"/mnt/lfc2/v16t/wada/M2"
+SUPER_DIR = f"/mnt/v16t/wada/M2"
+SUPER_DIR2 = f"/mnt/v16t/wada/M2"
 Q_DIR = [
     "rbi_q_3"
 ]
