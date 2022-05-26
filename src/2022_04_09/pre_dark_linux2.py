@@ -60,10 +60,9 @@ if __name__ == '__main__':
     args = sys.argv
 
     sub_dir = args[1]
-    s = int(args[2])
 
     for q_dir in Q_DIR:
-        for f in tqdm(range(s, s+1000)):
+        for f in tqdm(range(3800, 5000)):
             FILE = SUPER_DIR + "/original/2022_04_09/" + q_dir + "/" + sub_dir + "/" + sub_dir + f"{f:06}.bmp"
 
             img = cv2.imread(FILE)
