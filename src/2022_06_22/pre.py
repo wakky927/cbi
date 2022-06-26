@@ -17,11 +17,18 @@ def gauss_circle(image, sd, high=255, low=0, random_sd=0):
     return image
 
 
-def detect_tracer(img, sample_img):
-    pass
+# def sab_pixel_interpolation(ij, r):
+#     for a in range(-5, 6):
+#         for b in range(-5, 6):
+#             if (ij[0]+a, ij[1]+b) in r:
+#                 return True
+#     return False
 
 
-if __name__ == '__main__':
-    im = cv2.imread("gauss_circle_size_9_sd_2.bmp")
-    sample = cv2.imread("gauss_circle_size_9_sd_2.bmp")
-    
+def detect_tracer(img, tracer_im, threshold):
+
+    res = cv2.matchTemplate(img, tracer_im, cv2.TM_CCORR_NORMED)
+    res_j, res_i = np.where(res > threshold)
+
+    return res_j, res_i
+
