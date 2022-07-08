@@ -24,9 +24,9 @@ def pre_at_x_100_mm(args):
 
 
 def main(args):
-    if args[1] == "100":
+    if args[1] == '100':
         pre_at_x_100_mm(args)
-    elif args[1] == "200":
+    elif args[1] == 200:
         pass
     else:
         print("ERROR!")

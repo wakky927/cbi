@@ -1,0 +1,14 @@
+10.1.1 - car [01/Mar/2022:13:05:05 +0900] "GET /python HTTP/1.0" 200 2222
+10.1.1 - car [01/Mar/2022:13:05:05 +0900] "GET /python HTTP/1.0" 200 2222
+a
+a
+w
+sa
+af
+fff
+ffgg
+a
+df
+gearger
+reyrhd
+hhfcg
