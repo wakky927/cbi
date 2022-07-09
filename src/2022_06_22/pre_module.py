@@ -34,7 +34,7 @@ def pixel_analysis(ji, img, t_size, r, th):
 
                 r_ji = np.where(r[j-1:j+2, i-1:i+2] > th)
                 for r_j, r_i in zip(r_ji[0], r_ji[1]):
-                    brightness += img[r_j + t_size[0] // 2, r_i + t_size[1] // 2]
+                    brightness += img[j + r_j + t_size[0] // 2, i + r_i + t_size[1] // 2]
 
                 brightness /= area
 
@@ -55,7 +55,7 @@ def pixel_analysis(ji, img, t_size, r, th):
 
 
 def detect_tracer(img, tracer_im, threshold):
-    res = cv2.matchTemplate(img, tracer_im, cv2.TM_CCORR_NORMED)
+    res = np.abs(cv2.matchTemplate(img, tracer_im, cv2.TM_CCOEFF_NORMED))
     res_j, res_i = np.where(res > threshold)
 
     pp_yx_area_brightness = pixel_analysis(ji=[res_j, res_i], img=img, t_size=tracer_im.shape, r=res, th=threshold)
