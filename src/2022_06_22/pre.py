@@ -19,8 +19,8 @@ def pre_at_x_100_mm(args):
         img = cv2.imread(in_dir + in_dir[-14:-1] + f"{n:06}.bmp", 0)
         img = img[115:, 140:900]
 
-        pp_yx = pre_module.detect_tracer(img=img, tracer_im=sample_img, threshold=0.6)
-        np.savetxt(out_dir + f"pp_{n}.csv", pp_yx, fmt='%.1f', delimiter=',', header="pp_y, pp_x")
+        pp_yx_a_b = pre_module.detect_tracer(img=img, tracer_im=sample_img, threshold=0.6)
+        np.savetxt(out_dir + f"pp_{n}.csv", pp_yx_a_b, fmt='%.1f', delimiter=',', header="pp_y, pp_x")
 
 
 def main(args):
