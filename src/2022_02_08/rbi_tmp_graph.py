@@ -38,7 +38,7 @@ def graph(dx, dy, out_path):
     pp = fig.colorbar(im)
     for tt in pp.ax.get_yticklabels():
         tt.set_fontsize(100)
-    pp.set_label('$\sqrt{u^2+v^2}$ [mm/s]', fontsize=100)
+    pp.set_label('$\sqrt{u^2+v^2}$ [mm/gx_32_gy_32_t_32_s_64_th_70]', fontsize=100)
     im.set_clim(0, 120)
     plt.savefig(out_path, dpi=80)
 

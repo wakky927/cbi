@@ -64,7 +64,7 @@ def calib(args):
 def main(args):
     if args[1] == "b":
         bg(args)
-    elif args[1] == "s":
+    elif args[1] == "gx_32_gy_32_t_32_s_64_th_70":
         sub_bg(args)
     elif args[1] == "c":
         calib(args)
